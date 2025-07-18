@@ -34,7 +34,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: 🔧 Build Docker image
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/python-ci-cd-app .
+      run: docker build -t faizan354/python-ci-cd-app .
 
     - name: 🚀 Push Docker image
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/python-ci-cd-app
+      run: docker push faizan354/python-ci-cd-app
